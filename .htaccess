@@ -1,0 +1,5 @@
+ErrorDocument 404 /12nin.com/404.html
+<RequireAll>
+  Require all granted
+  Require not ip 101.140.179.88
+</RequireAll>
