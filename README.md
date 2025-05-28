@@ -1,1 +1,1 @@
-# sakitibi.github.io
+## コンフィグファイル用
