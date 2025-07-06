@@ -53,7 +53,7 @@
 	img:is([sizes="auto" i], [sizes^="auto," i]) {
 		contain-intrinsic-size: 3000px 1500px
 	}
-	button {
+	button:not(#next) {
 	    position: relative;
 	    padding: 10px 20px;
 	    font-size: 16px;
@@ -70,7 +70,7 @@
 	    width: 100%;
 	}
 	
-	button::before {
+	button:not(#next)::before {
 	    content: '';
 	    position: absolute;
 	    inset: 0;
@@ -79,16 +79,16 @@
 	    transition: filter 0.3s ease, transform 0.1s ease;
 	}
 	
-	button:hover::before {
+	button:not(#next):hover::before {
 	    filter: brightness(1.1);
 	}
 	
-	button:active::before {
+	button:not(#next):active::before {
 	    filter: brightness(0.85);
 	    transform: scale(0.98);
 	}
 	
-	button span {
+	button:not(#next) span {
 	    position: relative;
 	    z-index: 1;
 	}
