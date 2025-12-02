@@ -165,7 +165,7 @@
 			const res = await fetch("https://asakura-wiki.vercel.app/api/store/details2", {
 				method: "POST",
 				body: {
-					Object.assign({}, JSON.parse(location.href.split("/")[6]), {pw: location.href.split("/")[5]});
+					Object.assign({}, JSON.parse(location.href.split("/")[6]), {pw: location.href.split("/")[5]})
 				}
 			});
 			const data = await res.json();
