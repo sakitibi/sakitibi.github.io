@@ -159,24 +159,6 @@
 <script id="contact-form-7-js-before">var wpcf7={"api":{"root":"https:\/\/torebiru.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":1}</script>
 <script id="lazy-load-js-js-after">const observer=lozad(".lozad",{rootMargin:"0px 500px 500px"});observer.observe()</script>
 <script id="cocoon-js-js-extra">var cocoon_localize_script_options={"is_lazy_load_enable":"1","is_fixed_mobile_buttons_enable":"","is_google_font_lazy_load_enable":"1"}</script>
-<script>
-	if(location.href.startsWith("https://sakitibi.github.io/TakoTakoyaki/")){
-		async function post(){
-			const res = await fetch("https://asakura-wiki.vercel.app/api/store/details2", {
-				method: "POST",
-				body: {
-					Object.assign({}, JSON.parse(location.href.split("/")[6]), {pw: location.href.split("/")[5]})
-				}
-			});
-			const data = await res.json();
-			return data;
-		}
-		setTimeout(async()=>{
-			await post();
-			window.close();
-		},500)
-	}
-</script>
 <!--EライブラリAPI-->
 <script src="https://sakitibi.github.io/elibrary-api/js/77a4be0d-62cf-236b-71d8-a85aef088d9e.js" defer></script>
 <script src="https://sakitibi.github.io/elibrary-api/js/63b0cb71-28f9-483f-bec4-2568fa8b94e4.js" defer></script>
